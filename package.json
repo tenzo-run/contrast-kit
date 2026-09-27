@@ -1,0 +1,21 @@
+{
+  "name": "contrast-kit",
+  "version": "1.0.0",
+  "description": "Zero-dependency WCAG 2.x + APCA contrast checker and CSS color toolkit in TypeScript.",
+  "type": "module",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": { "types": "./dist/index.d.ts", "import": "./dist/index.js" }
+  },
+  "files": ["dist"],
+  "scripts": {
+    "build": "tsc",
+    "test": "node --experimental-strip-types --test test/*.test.ts"
+  },
+  "keywords": ["color", "contrast", "wcag", "apca", "accessibility", "a11y", "hex", "hsl"],
+  "author": "Sanzhar Abdurakhmanov (https://github.com/tenzo-run)",
+  "license": "MIT",
+  "engines": { "node": ">=22.6" },
+  "devDependencies": { "typescript": "^5.7.0" }
+}
